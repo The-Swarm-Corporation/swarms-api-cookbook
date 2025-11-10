@@ -1,6 +1,6 @@
 # Swarms API Cookbook
 
-<p align="center">
+<p align="left">
   <!-- Main Navigation Links -->
   <a href="https://swarms.ai">🏠 Swarms Website</a>
   <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
