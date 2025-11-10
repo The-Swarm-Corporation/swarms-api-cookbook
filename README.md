@@ -81,29 +81,35 @@ Replace `path/to/script.py` with any script listed below.
 #### `multi_agent/`
 Multi-agent workflows where several agents collaborate either concurrently or in sequence.
 
-- [`hospital_team.py`](examples/multi_agent/hospital_team.py): Simulates a hierarchical medical unit swarm (attending physician as leader, nurses, and a medical assistant) collaborating on diagnosis and care planning from patient symptoms. Prints a structured JSON result.
-- [`icd_ten_analysis.py`](examples/multi_agent/icd_ten_analysis.py): Concurrent ICD code analysis with three agents (an analyzer and two explainers) producing detailed ICD insights from patient symptoms.
-- [`python_client_batch_operations.py`](examples/multi_agent/python_client_batch_operations.py): Pattern for processing a list of tasks in batch by looping and running `client.swarms.run` for each task. Good for bulk workloads.
-- [`python_client_content_generation.py`](examples/multi_agent/python_client_content_generation.py): Sequential content generation workflow with a Research agent and a Writer agent to produce a blog post from current AI trends.
-- [`python_client_data_analysis_pipeline.py`](examples/multi_agent/python_client_data_analysis_pipeline.py): Sequential data analysis pipeline featuring Data Validator, Statistical Analyst, and Insight Generator agents.
-- [`python_client_first_swarm.py`](examples/multi_agent/python_client_first_swarm.py): Minimal multi-agent medical analysis swarm (Symptom Analyzer and ICD Code Specialist) returning a response for given symptoms.
+| File | Description | Run |
+|---|---|---|
+| [`hospital_team.py`](examples/multi_agent/hospital_team.py) | Simulates a hierarchical medical unit swarm (attending physician as leader, nurses, and a medical assistant) collaborating on diagnosis and care planning from patient symptoms. Prints a structured JSON result. | `python examples/multi_agent/hospital_team.py` |
+| [`icd_ten_analysis.py`](examples/multi_agent/icd_ten_analysis.py) | Concurrent ICD code analysis with three agents (an analyzer and two explainers) producing detailed ICD insights from patient symptoms. | `python examples/multi_agent/icd_ten_analysis.py` |
+| [`python_client_batch_operations.py`](examples/multi_agent/python_client_batch_operations.py) | Pattern for processing a list of tasks in batch by looping and running `client.swarms.run` for each task. Good for bulk workloads. | `python examples/multi_agent/python_client_batch_operations.py` |
+| [`python_client_content_generation.py`](examples/multi_agent/python_client_content_generation.py) | Sequential content generation workflow with a Research agent and a Writer agent to produce a blog post from current AI trends. | `python examples/multi_agent/python_client_content_generation.py` |
+| [`python_client_data_analysis_pipeline.py`](examples/multi_agent/python_client_data_analysis_pipeline.py) | Sequential data analysis pipeline featuring Data Validator, Statistical Analyst, and Insight Generator agents. | `python examples/multi_agent/python_client_data_analysis_pipeline.py` |
+| [`python_client_first_swarm.py`](examples/multi_agent/python_client_first_swarm.py) | Minimal multi-agent medical analysis swarm (Symptom Analyzer and ICD Code Specialist) returning a response for given symptoms. | `python examples/multi_agent/python_client_first_swarm.py` |
 
 #### `single_agent/`
 Single-agent operations and batch runs using individual agents.
 
-- [`agent_overview.py`](examples/single_agent/agent_overview.py): Run a single expert agent (“Bloodwork Diagnosis Expert”) on a diagnostic task and print a formatted JSON response.
-- [`batch_example.py`](examples/single_agent/batch_example.py): Submit multiple independent single-agent tasks in one batch using `client.agent.batch.run` (e.g., bloodwork interpretation and radiology summarization).
+| File | Description | Run |
+|---|---|---|
+| [`agent_overview.py`](examples/single_agent/agent_overview.py) | Run a single expert agent (“Bloodwork Diagnosis Expert”) on a diagnostic task and print a formatted JSON response. | `python examples/single_agent/agent_overview.py` |
+| [`batch_example.py`](examples/single_agent/batch_example.py) | Submit multiple independent single-agent tasks in one batch using `client.agent.batch.run` (e.g., bloodwork interpretation and radiology summarization). | `python examples/single_agent/batch_example.py` |
 
 #### `utils/`
 Utility scripts for quick checks, model and health endpoints, async patterns, and swarm management.
 
-- [`client_example.py`](examples/utils/client_example.py): Quick tour of client endpoints: lists available models, checks health, fetches swarm logs, prints rate limits, and checks available swarms.
-- [`python_client_async_example.py`](examples/utils/python_client_async_example.py): Demonstrates `AsyncSwarmsClient` to run multiple operations concurrently (multiple swarm runs and a model list) using `asyncio.gather`.
-- [`python_client_health_status.py`](examples/utils/python_client_health_status.py): Checks API health and retrieves current rate limits; prints results.
-- [`python_client_model_info.py`](examples/utils/python_client_model_info.py): Lists available models from the API.
-- [`python_client_quickstart.py`](examples/utils/python_client_quickstart.py): Minimal client bootstrap showing how to instantiate `SwarmsClient` with an API key (starting point for your own scripts).
-- [`python_client_swarm_management.py`](examples/utils/python_client_swarm_management.py): Create and run a swarm, then retrieve logs and inspect which swarms are available.
-- [`rate_limits.py`](examples/utils/rate_limits.py): Retrieves and prints current rate limits and health status for quick diagnostics.
+| File | Description | Run |
+|---|---|---|
+| [`client_example.py`](examples/utils/client_example.py) | Quick tour of client endpoints: lists available models, checks health, fetches swarm logs, prints rate limits, and checks available swarms. | `python examples/utils/client_example.py` |
+| [`python_client_async_example.py`](examples/utils/python_client_async_example.py) | Demonstrates `AsyncSwarmsClient` to run multiple operations concurrently (multiple swarm runs and a model list) using `asyncio.gather`. | `python examples/utils/python_client_async_example.py` |
+| [`python_client_health_status.py`](examples/utils/python_client_health_status.py) | Checks API health and retrieves current rate limits; prints results. | `python examples/utils/python_client_health_status.py` |
+| [`python_client_model_info.py`](examples/utils/python_client_model_info.py) | Lists available models from the API. | `python examples/utils/python_client_model_info.py` |
+| [`python_client_quickstart.py`](examples/utils/python_client_quickstart.py) | Minimal client bootstrap showing how to instantiate `SwarmsClient` with an API key (starting point for your own scripts). | `python examples/utils/python_client_quickstart.py` |
+| [`python_client_swarm_management.py`](examples/utils/python_client_swarm_management.py) | Create and run a swarm, then retrieve logs and inspect which swarms are available. | `python examples/utils/python_client_swarm_management.py` |
+| [`rate_limits.py`](examples/utils/rate_limits.py) | Retrieves and prints current rate limits and health status for quick diagnostics. | `python examples/utils/rate_limits.py` |
 
 ----
 
