@@ -1,6 +1,13 @@
 # Swarms API Cookbook
 
-Practical cookbook examples for the Swarms API Client.
+Practical cookbook examples for the Swarms API Client. This repository is a hands-on guide to building with Swarms, showcasing single-agent and multi-agent workflows, concurrent and sequential pipelines, content generation, data analysis, health and rate checks, and more. Each example is designed to be minimal yet illustrative, so you can quickly adapt patterns to your own use cases.
+
+What you’ll find here:
+
+- Clear, runnable examples for common tasks
+- Patterns for hierarchical, concurrent, and sequential workflows
+- Utilities for health checks, model discovery, logs, and rate limits
+- Async usage with `AsyncSwarmsClient` for higher throughput workloads
 
 ### Install
 
@@ -55,6 +62,12 @@ response = client.swarms.run(
 print(response)
 ```
 
+### Why Swarms
+- Compose specialized agents to collaborate on end-to-end tasks.
+- Mix and match workflow types (hierarchical leadership, concurrent workers, sequential pipelines).
+- Keep observability with logs, health checks, and rate limit endpoints.
+- Scale via async execution and batch operations.
+
 ### How to run an example
 
 ```bash
@@ -91,3 +104,19 @@ Utility scripts for quick checks, model and health endpoints, async patterns, an
 - [`python_client_quickstart.py`](examples/utils/python_client_quickstart.py): Minimal client bootstrap showing how to instantiate `SwarmsClient` with an API key (starting point for your own scripts).
 - [`python_client_swarm_management.py`](examples/utils/python_client_swarm_management.py): Create and run a swarm, then retrieve logs and inspect which swarms are available.
 - [`rate_limits.py`](examples/utils/rate_limits.py): Retrieves and prints current rate limits and health status for quick diagnostics.
+
+----
+
+### Resources
+
+| Resource | Link |
+|---|---|
+| Documentation | [docs.swarms.ai](https://docs.swarms.ai) |
+| Technical support | [Book a Swarms Strategy Session](https://cal.com/swarms/swarms-strategy-session) |
+| Discord support | [Join the Swarms Discord](https://discord.gg/EamjgSaEQf) |
+
+---
+
+License
+
+Apache License
