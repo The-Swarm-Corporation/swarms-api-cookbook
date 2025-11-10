@@ -1,5 +1,15 @@
 # Swarms API Cookbook
 
+<p align="center">
+  <!-- Main Navigation Links -->
+  <a href="https://swarms.ai">🏠 Swarms Website</a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="https://docs.swarms.ai">📙 Documentation</a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="https://swarms.world/platform/api-keys">🔑 API Key Management</a>
+</p>
+
+
 Practical cookbook examples for the Swarms API Client. This repository is a hands-on guide to building with Swarms, showcasing single-agent and multi-agent workflows, concurrent and sequential pipelines, content generation, data analysis, health and rate checks, and more. Each example is designed to be minimal yet illustrative, so you can quickly adapt patterns to your own use cases.
 
 What you’ll find here:
