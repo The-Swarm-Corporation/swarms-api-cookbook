@@ -60,7 +60,7 @@ response = client.swarms.run(
             "agent_name": "Haiku Writer",
             "description": "Creates short poetic outputs",
             "system_prompt": "Write a haiku that is vivid and clear.",
-            "model_name": "groq/openai/gpt-oss-120b",
+            "model_name": "gpt-4.1",
             "role": "worker",
             "max_loops": 1,
             "max_tokens": 256,

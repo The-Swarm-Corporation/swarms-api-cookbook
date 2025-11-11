@@ -1,6 +1,7 @@
-from swarms_client import SwarmsClient
-from dotenv import load_dotenv
 import os
+
+from dotenv import load_dotenv
+from swarms_client import SwarmsClient
 
 load_dotenv()
 
